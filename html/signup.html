@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Queens Teddy</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo"><b>QUEENS <span>TEDDY</span></b></div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./ca.html" class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                     CART (<span class="cart-count">0</span>)
+            </a>
+        </div>
+    </nav>
+</header>
+<section class="auth-page">
+    <div class="auth-card">
+        <h1>Create Account</h1>
+        <p>Sign up now and start adding teddy bears to your cart.</p>
+        <form id="signup-form" class="auth-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Create a password">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" name="confirm" required placeholder="Confirm password">
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="auth-footer">
+            <span>Already have an account?</span>
+            <a href="signin.html">Sign in</a>
+        </div>
+    </div>
+</section>
+<footer class="foot">
+    <div class="foot-slide">
+        <div class="slider">
+            <h1>Company Info</h1>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+        </div>
+        <div class="slider">
+            <h1>Customer Service</h1>
+            <a href="">Shipping Info</a>
+            <a href="">Return Policy</a>
+            <a href="">Help Center</a>
+        </div>
+        <div class="slider">
+            <h1>Connect With Us</h1>
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="visa">
+            <div>
+                <h1>We Accept</h1>
+                <div class="cards">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="right">&copy;2026 | QUEENS TEDDY | Terms Of Use | Privacy Policy</p>
+</footer>
+<script defer src="../javascri/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+
+        <div class="logo">
+            <b>QUEENS <span>TEDDY</span></b>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./ca.html" class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                     CART (<span class="cart-count">0</span>)</a>
+        </div>
+
+    </nav>
+</header>
+
+<section class="cart-page">
+    <div class="cart-page-inner">
+        <div class="cart-empty">
+            <h1>Your Cart Is Empty</h1>
+            <p>Products added to cart will appear here.</p>
+            <a href="./product.html" class="continue-shop"><i class="fa-solid fa-arrow-left"></i> Continue Shopping</a>
+        </div>
+    </div>
+</section>
+
+<div class="payment-modal" role="dialog" aria-modal="true" aria-labelledby="payment-heading">
+    <div class="payment-card">
+        <button class="close-modal" aria-label="Close payment">×</button>
+        <h2 id="payment-heading">Choose Payment Method</h2>
+        <p>Select a secure way to pay for your order.</p>
+        <div class="payment-options">
+            <button type="button" class="payment-method" data-method="card">VisaVerse Card</button>
+            <button type="button" class="payment-method" data-method="account">Account Number</button>
+        </div>
+        <form class="payment-form hidden" novalidate>
+            <label for="notifyEmail">Notification Email</label>
+            <input type="email" id="notifyEmail" name="notifyEmail" class="payment-input" placeholder="notify@youremail.com">
+            <div class="payment-fields card-fields hidden">
+                <label for="cardNumber">VisaVerse Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" class="payment-input" placeholder="1234 5678 9012 3456">
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" name="expiry" class="payment-input" placeholder="MM/YY">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" class="payment-input" placeholder="123">
+            </div>
+            <div class="payment-fields account-fields hidden">
+                <div class="payment-info">
+                    <p><strong>Pay to UBA Account</strong></p>
+                    <p><strong>Account Number:</strong> 2133755024</p>
+                    <p><strong>Bank:</strong> United Bank for Africa (UBA)</p>
+                    <p><strong>Name:</strong> EMEKA JULIET ONYEDIKACHI</p>
+                    <p>You have 45 minutes to complete the transfer and upload your receipt.</p>
+                </div>
+                
+                <label for="receiptUpload">Upload Transfer Receipt</label>
+                <input type="file" id="receiptUpload" name="receiptUpload" accept=".jpg,.jpeg,.png,.pdf" class="payment-input">
+                <div class="payment-timer hidden">Time remaining: <span class="timer-value">45:00</span></div>
+            </div>
+            <button type="submit" class="action-btn">Pay Now</button>
+        </form>
+        <div class="payment-success hidden">
+            <h2>Payment Complete</h2>
+            <p>Congratulations! We will get back to you through your email soon.</p>
+            <button class="action-btn close-modal">Close</button>
+        </div>
+    </div>
+</div>
+
+<footer class="foot">
+
+    <div class="foot-slide">
+
+        <div class="slider">
+            <h1>Company Info</h1>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+        </div>
+
+        <div class="slider">
+            <h1>Customer Service</h1>
+            <a href="">Shipping Info</a>
+            <a href="">Return Policy</a>
+            <a href="">Help Center</a>
+        </div>
+
+        <div class="slider">
+            <h1>Connect With Us</h1>
+
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="visa">
+
+        <div>
+            <h1>We Accept</h1>
+
+            <div class="cards">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    
+
+    <hr>
+
+    <p class="right">
+        &copy;2026 | QUEENS TEDDY | Terms Of Use | Privacy Policy
+    </p>
+
+</footer>
+<script defer src="../javascri/index.js"></script>
+</body>
+</html>
